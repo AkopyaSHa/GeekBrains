@@ -2,7 +2,7 @@ package lesson1;
 
 public class Task1_2 {
 
-    static byte a = 1;
+    byte a = 1;
     short b = 1;
     int c = 1;
     long d = 1;
