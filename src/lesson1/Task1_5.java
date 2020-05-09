@@ -1,11 +1,15 @@
 package lesson1;
 
 public class Task1_5 {
-    public void math (int a) {
-        if (a<0){
-            System.out.println("Число "+a+" отрицательное.");
-        } else {
-            System.out.println("Число "+a+" положительное.");
-        }
+    public void printIsPositive(int a) {
+        String isPositive = a < 0 ? "отрицательное" : "положительное";
+        System.out.println("Число " + isPositive);
+    }
+
+    public static void main(String[] args) {
+        Task1_5 task1_5 = new Task1_5();
+        task1_5.printIsPositive(10);
+        task1_5.printIsPositive(-10);
+        task1_5.printIsPositive(0);
     }
 }
