@@ -15,6 +15,10 @@ public class Animal {
         this.swimSkill = swimSkill;
     }
 
+    public Animal(String name) {
+        this.name = name;
+    }
+
     public String getType() {
         return type;
     }
@@ -55,7 +59,8 @@ public class Animal {
         this.swimSkill = swimSkill;
     }
 
-    public void getRandomSkill() {
+
+    public void getRandomStrength() { //метод для последующей реализации разброса способностей животных
         System.out.println("Метод требует перегрузки для конкретного класса");
     }
 

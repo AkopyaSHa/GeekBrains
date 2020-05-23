@@ -7,18 +7,17 @@ public class Dog extends Animal {
     private int maxSwimSkill = 15;
 
 
-    public Dog(String type, String name, int jumpSkill, int runSkill, int swimSkill) {
-        super(type, name, jumpSkill, runSkill, swimSkill);
+    public Dog(String name) {
+        super(name);
         setType("Собака");
-        getRandomSkill();
+        getRandomStrength();
     }
 
     @Override
-    public void getRandomSkill() {
+    public void getRandomStrength() {
         int strength = (int) (Math.random() * 4);
         setJumpSkill(maxJumpSkill - 0.5 * strength);
         setRunSkill(maxRunSkill - 100 * strength);
         setSwimSkill(maxSwimSkill - 5 * strength);
-        System.out.println(strength+"!!!!!!!!!!!!!!!!");
     }
 }
